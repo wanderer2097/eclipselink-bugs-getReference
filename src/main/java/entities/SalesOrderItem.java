@@ -12,7 +12,7 @@ public class SalesOrderItem {
     @EmbeddedId
     private SalesOrderItemId salesOrderItemId;
 
-    @MapsId
+    @MapsId("parentOrder")
     @ManyToOne
     private SalesOrder parentOrder;
 
